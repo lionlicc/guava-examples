@@ -51,6 +51,7 @@ public class BaseTest {
         ImmutableSet<String> strings = ImmutableSet.of("A", "B", "C");
 
         String joined = Joiner.on(":").join(strings);
+        System.out.println(joined);
         assertEquals("A:B:C", joined);
     }
 
